@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Teets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- top navbar thing that fades out -->
+    <div class="topbar">
+        <p><a id="nav-title" class="text-transition" href="#">Robert Teets Software</a></p>
+        <button id="login" class="btn text-transition">Login</button>
+    </div>
+    <!-- side nav??? -->
+    <div class="blackout"></div>
+    <div class="sidenav">
+        <button class="btn" id="closeside"><img src="{{ url_for('static', filename='imgs/icons/x.svg') }}" alt="close"></button>
+    </div>
+    <!-- first hero with header -->
+    <div class="fade-wrapper">
+        <div class="panel">
+            <h1 id="hero-header">Real Software<span>built with passion</span></h1>
+        </div>
+        <!-- second span -->
+        <div class="panel">
+        </div>
+        <div class="panel">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

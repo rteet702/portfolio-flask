@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Nunito;
+    src: url("./Nunito-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: PTMono;
+    src: url("./PTMono-Regular.ttf")
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    background: None;
+    border: None;
+
+    font-family: Nunito;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(55deg, #eecda3, #ef629f);
+    background-attachment: fixed;
+}
+/* Remove Scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Header Styling */
+#nav-title {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* transition classes */
+.text-transition {
+    color: white;
+    transition: color 0.3s;
+}
+
+/* Top Bar */
+.topbar {
+    position: fixed;
+    width: 100%;
+
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 0);
+
+    transition: background-color 0.3s;
+}
+
+#login {
+    text-decoration: none;
+
+    font-size: 1em;
+
+    margin-right: 30px;
+}
+
+/* sidenav??? */
+.sidenav {
+    height: 100%;
+    width: 0px;
+
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+
+    background-color: rgba(255, 255, 255);
+
+    overflow-x: hidden;
+
+    transition: width 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn img {
+    width: 40px;
+
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.blackout {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*  Main Hero styling */
+.panel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: 30px;
+}
+
+.panel h1 {
+    font-family: PTmono;
+    font-size: 10rem;
+    font-weight: bold;
+    word-wrap: normal;
+
+    color:rgba(255, 255, 255);
+    transition: text-shadow 1s, font-size 0.5s ease-in-out;
+}
+
+.panel h1 span {
+    display: block;
+}
+
+/* Content Panels */
+.card {
+    height:  100%;
+    width: 100%;
+
+    background-color: white;
+}
+
+
+.fade-wrapper {
+    width: 100%;
+    height: 100%;
+}
